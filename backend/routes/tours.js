@@ -4,6 +4,7 @@ import {
   createTour,
   deleteTour,
   getAllTour,
+  getFeaturedTour,
   getSingleTour,
   getTourBySearch,
   updateTour,
@@ -28,5 +29,8 @@ router.get("/", getAllTour);
 
 // get tour by search
 router.get("/search/getTourBySearch", getTourBySearch);
+
+// get featured tours
+router.get("/search/getFeaturedTours", getFeaturedTour);
 
 export default router;
