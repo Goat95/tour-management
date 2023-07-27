@@ -7,6 +7,7 @@ import {
   getFeaturedTour,
   getSingleTour,
   getTourBySearch,
+  getTourCount,
   updateTour,
 } from "../controllers/tourController.js";
 
@@ -32,5 +33,8 @@ router.get("/search/getTourBySearch", getTourBySearch);
 
 // get featured tours
 router.get("/search/getFeaturedTours", getFeaturedTour);
+
+// get tour count
+router.get("/search/getTourCount", getTourCount);
 
 export default router;
