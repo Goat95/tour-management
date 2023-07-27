@@ -5,7 +5,7 @@ import {
   getAllUser,
   getSingleUser,
   updateUser,
-} from "../controllers/userController";
+} from "../controllers/userController.js";
 
 const router = express.Router();
 
@@ -20,3 +20,5 @@ router.get("/:id", getSingleUser);
 
 // get all users
 router.get("/", getAllUser);
+
+export default router;
